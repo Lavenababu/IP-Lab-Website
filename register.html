@@ -4,25 +4,42 @@
        <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- <link rel="stylesheet" href="style.css"> -->
-     <title>Registration</title>
+      <link rel="stylesheet" href="css/style.css">
+      <title>Registration</title>
     </head>
-    <body>
-        <div id="register">
-        <h2><center>Registration Page</center></h2>
-        <form name="input" action="html_form_action.asp" method="get"><center>
+
+    <body class="register-body">
+
+        <div class="register">
             
-            <label for="firstname">First name: </label>
+        <header id="header">
+        <h2>Registration Page</h2>
+        </header>
+
+        <form name="input" action="html_form_action.asp" method="get" class="register-form">
+            
+            <label for="from-text">First name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" name="firstname"><br><br>
-            Last name: <input type="text" name="lastname"><br><br>
-            Gender:
+
+            <label for="from-text"></label>Last name: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="lastname"><br><br>
+
+            <label for="from-text"></label>Gender: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="radio" name="gender" value="male">Male
             <input type="radio" name="gender" value="female">Female<br><br>
-            Email: <input type="email" name="email"><br><br>
-            Password: <input type="password" name="password"><br><br>
-            Confirm Password: <input type="password" name="confirmpassword"><br><br>
-            <input type="submit" value="Register"><br><br>
-            <a href="login.html">Already registered? Back to Login</a></center><br><br><br>
+
+            <label for="from-text"></label>Email: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="email"><br><br>
+
+            <label for="from-text"></label>Password: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" name="password"><br><br>
+
+            <label for="from-text"></label>Confirm Password: </label>
+            <input type="password" name="confirmpassword"><br><br><br>
+
+            <input type="submit" value="Register" style="margin-left:120px;" class="register-button"><br><br><br>
+
+            <a href="login.html" style="margin-left:45px;">Already registered? Back to Login</a><br><br><br><br>
         </form>
         </div>
     </body>

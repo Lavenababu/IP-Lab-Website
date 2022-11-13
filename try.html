@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="age">Check your Age</button>
+    <script>
+        //event
+        document.getElementById("age").addEventListener("click", (e) => {
+            var age = prompt("Enter your age:", age);  //variable
+            if (age < 18)                                //conditional statement
+            {
+                reqage = 18 - age   //operator  //loop
+                alert("You are not an adult, you can vote after " + reqage + " years")
+            }
+            else alert("You are adult and are eligible for voting")
+
+        })        
+    </script>
+</body>
+</html>
